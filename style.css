@@ -119,10 +119,9 @@ header.scrolled {
     align-items: center;
     gap: 8rem;
     background-color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-    
+    padding: 8rem 10%;
 }
+
 
 .home-content h1 {
     font-size: 6rem;
@@ -187,6 +186,93 @@ span {
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
+/* ============ RESPONSIVE HOME ============ */
+
+/* Tablets & below */
+@media (max-width: 1024px) {
+    #home {
+        gap: 4rem;
+        padding: 6rem 8%;
+    }
+
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 6%;
+    }
+
+    .home-content h1 {
+        font-size: 3.6rem;
+        line-height: 1.2;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .typing-text {
+        font-size: 2.4rem;
+    }
+
+    .home-content p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .social-icons a {
+        margin: 2rem 0;
+    }
+
+    .home-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .typing-text {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}
+
 
 /* TYPING TEXT */
 .typing-text {
@@ -219,6 +305,9 @@ span {
     animation: cursor 0.7s steps(1) infinite;
 }
 
+.typing-text {
+    overflow: hidden;
+}
 
 
 /* ===== PROJECTS SECTION ===== */
